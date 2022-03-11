@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>biglietto del treno</title>
+</head>
+<body> 
+    <div class=" container d-flex justify-content-center mt-3">
+       <h1 class="text-uppercase text-white">calcola il prezzo del tuo biglietto</h1> 
+    </div>
+    
+    <div class="container mt-3 bg-white text_red rounded-3">
+        <form class="row g-3 d-flex justify-content-around align-items-center">
+        <div class="col-md-6  w_diferent text-center">
+            <label for="inputCity" class="form-label"><h5 id="">Nome Cognome</h5></label>
+            <input type="text" class="form-control text-center border_pers" id="nomeCognome">
+        </div>
+        <div class="col-md-2  w_diferent mt-3 text-center">
+            <h5 class="text-center">Km da percorrere</h5>
+            <input type="number" id="chilometri" class="p_personal text-center border_pers rounded-3" name="b" value="chilometri">
+            
+        </div>
+        <div class="col-md-4 w_diferent text-center">
+            <label for="inputState" class="form-label"><h5>Fascia d'età</h5></label>
+            <select id="inputState" class="form-select text-center border_pers">
+                <option selected id="eta"></option>
+                <option>Maggiorenne</option>
+                <option>Minorenne</option>
+                <option>Over 65</option>
+            </select>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4 pb-4">
+            <button id="bottoneShow" class="text_red button_1 fw-bold">Genera</button>
+            <button class="text_red button_2 ms-4 fw-bold">Annulla</button>
+        </div>
+      </form>
+    </div>
+    <div id="notaSelect" class=" container d-flex justify-content-center mt-3 d_none nota">
+        <h1 class="text-uppercase text-white">il tuo biglietto</h1> 
+    </div>
+     
+    <div class="container mt-3 bg-white pb-3">
+        <div class="row g-3">
+            <h2 class="text-uppercase">dettaglio passeggeri</h2>
+        <div class="col-md-6  w_diferent2 bg_grey">
+            <h3 class="text-uppercase">nome passeggero</h3>
+            <div id="nomePasseggero"></div>
+        </div>
+        <div class="col-md-2  w_diferent mt-3 w-diferent3 border_2">
+            <table class="table table-borderless justify-content-around">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice CP</th>
+                            <th scope="col">Costo biglietto</th>
+                        </tr>
+                    <tr>
+                      <th scope="row">
+                        <div id="prezzo"></div>
+                      </th>
+                      <td>5</td>
+                      <td></td>
+                      <td>
+                        <div id="prezzoScontato1"></div>
+                        <div id="prezzoScontato2"></div>
+                      </td>
+                    </tr>
+            </table>
+        </div>
+     </div>
+    
+    <div id="chilometri"></div>
+    <!-- <div id="eta"></div> -->
+    <!-- <div id="prezzo"></div>
+    <div id="prezzoScontato1"></div>
+    <div id="prezzoScontato2"></div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./asset/javascript/myscript.js"></script>
+</body>
+</html>

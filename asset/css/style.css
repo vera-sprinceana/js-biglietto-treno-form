@@ -1,0 +1,41 @@
+.w_diferent{
+    width: 20%;
+}
+body{
+    background-color: rgba(185,20,80,255);
+}
+.text_red{
+    color: rgba(185,20,80,255)
+}
+.p_personal{
+    padding: 3%;
+}
+.button_1{
+    border: 2px solid rgba(239,158,87,255);
+}
+.button_2{
+    border: 2px solid rgba(139,139,139,255);
+}
+.button_1,
+.button_2{
+    background-color: rgba(204,204,204,255);
+    border-radius: 10%;
+}
+.border_pers{
+    border: 2px solid rgba(185,20,80,255);
+}
+.bg_grey{
+    background-color:rgba(128,128,128,255);
+}
+.w_diferent2{
+    width: 25%;
+}
+.w-diferent3{
+    width: 70%;
+}
+.border_2{
+    border: 1px solid rgba(128,128,128,255);
+}
+.d_none{
+    display: none;
+}
