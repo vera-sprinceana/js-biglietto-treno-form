@@ -16,11 +16,11 @@
        <h1 class="text-uppercase text-white">calcola il prezzo del tuo biglietto</h1> 
     </div>
     
-    <div class="container mt-3 bg-white text_red rounded-3">
+    <div class="container mt-3 bg-white text_red border_radius">
         <form class="row g-3 d-flex justify-content-around align-items-center">
         <div class="col-md-6  w_diferent text-center">
-            <label for="inputCity" class="form-label"><h5 id="">Nome Cognome</h5></label>
-            <input type="text" class="form-control text-center border_pers" id="nomeCognome">
+            <label for="inputCity" class="form-label"><h5>Nome Cognome</h5></label>
+            <input type="text" class="form-control text-center border_pers text-uppercase" id="nomeCognome">
         </div>
         <div class="col-md-2  w_diferent mt-3 text-center">
             <h5 class="text-center">Km da percorrere</h5>
@@ -29,61 +29,48 @@
         </div>
         <div class="col-md-4 w_diferent text-center">
             <label for="inputState" class="form-label"><h5>Fascia d'età</h5></label>
-            <select id="inputState" class="form-select text-center border_pers">
-                <option selected id="eta"></option>
-                <option>Maggiorenne</option>
-                <option>Minorenne</option>
-                <option>Over 65</option>
+            <select id="eta" class="form-select text-center border_pers">
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Minorenne">Minorenne</option>
+                <option value="over-65">Over-65</option>
             </select>
         </div>
         <div class="col-12 d-flex justify-content-center mt-4 pb-4">
-            <button id="bottoneShow" class="text_red button_1 fw-bold">Genera</button>
+            <button type="button" id="bottoneShow" class="text_red button_1 fw-bold">Genera</button>
             <button class="text_red button_2 ms-4 fw-bold">Annulla</button>
         </div>
       </form>
     </div>
-    <div id="notaSelect" class=" container d-flex justify-content-center mt-3 d_none nota">
-        <h1 class="text-uppercase text-white">il tuo biglietto</h1> 
+    <h1 class="text-uppercase text-white text-center">il tuo biglietto</h1> 
+    <div id="notaSelect" class="d-none container mt-3  justify-content-center mt-3 bg-white pb-3 border_radius justify-content-bwtween ">
+        
+            <div class="row g-3">
+                <h3 class="text-uppercase">dettaglio passeggeri</h3>
+            <div class="col-3 w_diferent2 bg_grey">
+                <h3 class="text-uppercase">nome passeggero</h3>
+                <span id="nomePasseggero"></span>
+            </div>
+            <div class="col-9 row w_diferent mt-3 w-diferent3 border_2 d-flex ">
+                <div class="col p-4">
+                    <h5>Offerta</h5>
+                    <span id="offerta"></span>
+                </div>
+                <div class="col p-4">
+                    <h5>Carrozza</h5>
+                    <span>5</span>
+                </div>
+                <div class="col p-4">
+                    <h5>Codice CP</h5>
+                    <span>54129</span>
+                </div>
+                <div class="col p-4">
+                    <h5>Costo biglietto</h5>
+                    <span id="prezzoScontato">0.00€</span>
+                </div>
+            </div>
+        
     </div>
-     
-    <div class="container mt-3 bg-white pb-3">
-        <div class="row g-3">
-            <h2 class="text-uppercase">dettaglio passeggeri</h2>
-        <div class="col-md-6  w_diferent2 bg_grey">
-            <h3 class="text-uppercase">nome passeggero</h3>
-            <div id="nomePasseggero"></div>
-        </div>
-        <div class="col-md-2  w_diferent mt-3 w-diferent3 border_2">
-            <table class="table table-borderless justify-content-around">
-                <tbody>
-                    <thead>
-                        <tr>
-                            <th scope="col">Offerta</th>
-                            <th scope="col">Carrozza</th>
-                            <th scope="col">Codice CP</th>
-                            <th scope="col">Costo biglietto</th>
-                        </tr>
-                    <tr>
-                      <th scope="row">
-                        <div id="prezzo"></div>
-                      </th>
-                      <td>5</td>
-                      <td></td>
-                      <td>
-                        <div id="prezzoScontato1"></div>
-                        <div id="prezzoScontato2"></div>
-                      </td>
-                    </tr>
-            </table>
-        </div>
-     </div>
     
-    <div id="chilometri"></div>
-    <!-- <div id="eta"></div> -->
-    <!-- <div id="prezzo"></div>
-    <div id="prezzoScontato1"></div>
-    <div id="prezzoScontato2"></div> -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./asset/javascript/myscript.js"></script>
 </body>
