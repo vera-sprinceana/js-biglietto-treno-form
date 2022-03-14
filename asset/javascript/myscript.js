@@ -29,15 +29,15 @@ bottoneGenera.addEventListener("click",
 
         nomeTabella.innerHTML=nome.value;
 
-        if(eta.value ==" Minorenne "){
+        if(eta.value ==`Meno-di-18`){
             sconto.innerHTML=`sconto del 20% `;
             prezzoScontato.innerHTML=`${(chilometri.value * 0.21) * 0.80} €`
-        } else if(eta.value ==" Maggiorenne "){
-            sconto.innerHTML=`nessuno sconto `;
-            prezzoScontato.innerHTML=`${chilometri.value * 0.21} €`
-        } else{
+        }else if(eta.value ==`Over-65`){
             sconto.innerHTML=`sconto del 40% `;
             prezzoScontato.innerHTML=`${(chilometri.value * 0.21) * 0.60} €`
+        }else{
+            sconto.innerHTML=`nessuno sconto `;
+            prezzoScontato.innerHTML=`${chilometri.value * 0.21} €`
         }
 
         

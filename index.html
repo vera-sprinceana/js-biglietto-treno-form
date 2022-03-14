@@ -24,16 +24,15 @@
         </div>
         <div class="col-md-2  w_diferent mt-3 text-center">
             <h5 class="text-center">Km da percorrere</h5>
-            <input type="number" id="chilometri" class="p_personal text-center border_pers rounded-3" name="b" value="chilometri">
-            
+            <input type="number" id="chilometri" class="p_personal text-center border_pers rounded-3" name="b" value="chilometri"> 
         </div>
         <div class="col-md-4 w_diferent text-center">
-            <label for="inputState" class="form-label"><h5>Fascia d'età</h5></label>
-            <select id="eta" class="form-select text-center border_pers">
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Minorenne">Minorenne</option>
-                <option value="over-65">Over-65</option>
-            </select>
+           <h5 class="text-center">Fascia d'età</h5>
+           <select id="eta" class="form-select text-center border_pers" aria-label="Default select example">
+            <option value="Meno-di-18">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over-65">Over-65</option>
+          </select>
         </div>
         <div class="col-12 d-flex justify-content-center mt-4 pb-4">
             <button type="button" id="bottoneShow" class="text_red button_1 fw-bold">Genera</button>
@@ -65,7 +64,7 @@
                 </div>
                 <div class="col p-4">
                     <h5>Costo biglietto</h5>
-                    <span id="prezzoScontato">0.00€</span>
+                    <div id="prezzoScontato">0.00€</div>
                 </div>
             </div>
         
